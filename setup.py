@@ -7,13 +7,13 @@ setup(
     author_email='mario.balibrera@gmail.com',
     license='MIT License',
     description='Documentation plugin for cantools (ct)',
-    long_description='This package parses JSON-defined documentatoin data and displays it in a web page.',
+    long_description='This package parses JSON-defined documentation data and displays it in a web page.',
     packages=[
         'ctdocs'
     ],
     zip_safe = False,
     install_requires = [
-        "ct >= 0.8.6.2"
+        "ct >= 0.8.7"
     ],
     entry_points = '''''',
     classifiers = [

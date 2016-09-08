@@ -1,0 +1,1 @@
+This package parses JSON-defined documentation data and displays it in a web page.

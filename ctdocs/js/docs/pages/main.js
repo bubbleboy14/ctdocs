@@ -3,6 +3,7 @@ CT.require("core");
 CT.require("core.data");
 
 CT.onload(function() {
+	CT.initCore();
 	var md2ht = function(line) {
 		if (line.startsWith("\t"))
 			line = line.replace(/\t/g, "    ");

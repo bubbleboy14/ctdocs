@@ -30,4 +30,5 @@ CT.onload(function() {
 		}), "div", "ctlist2");
 	CT.dom.setContent("ctmain", [clist, content]);
 	clist.firstChild.expand();
+	CT.dom.className("tlitem")[0].trigger();
 });

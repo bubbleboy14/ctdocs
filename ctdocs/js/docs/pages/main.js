@@ -30,5 +30,9 @@ CT.onload(function() {
 		}, null, null, null, true), "div", "ctlist2");
 	CT.dom.setContent("ctmain", [clist, content]);
 	clist.firstChild.expand();
-	CT.dom.className("tlitem")[0].trigger();
+	var hash = location.hash.slice(1);
+	if (hash)
+		CT.dom.id("tl" + hash).trigger();
+	else
+		CT.dom.className("tlitem")[0].trigger();
 });

@@ -27,7 +27,7 @@ CT.onload(function() {
 	}, content = CT.dom.node(null, null, "ctcontent2"),
 		clist = CT.dom.node(CT.panel.accordion(core.data.map(processSection), function(section) {
 			CT.dom.setContent(content, section.content);
-		}), "div", "ctlist2");
+		}, null, null, null, true), "div", "ctlist2");
 	CT.dom.setContent("ctmain", [clist, content]);
 	clist.firstChild.expand();
 	CT.dom.className("tlitem")[0].trigger();

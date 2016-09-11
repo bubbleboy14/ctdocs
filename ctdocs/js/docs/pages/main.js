@@ -22,6 +22,8 @@ CT.onload(function() {
 	}, processSection = function(section) {
 		section.children.forEach(function(child) {
 			child.content = child.content.split("\n").map(md2ht);
+			if (core.config.ctdocs.source)
+				child.content.push(CT.dom.link("SOURCE", null, core.config.ctdocs.source(child.name), "abs ctr"));
 		});
 		return section;
 	}, content = CT.dom.node(null, null, "ctcontent2"),
